@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Local Storage</title>
+  </head>
+  <body class="m-6">
+    <h1 class="text-4xl font-bold py-4">Saving Your cars to local Storage</h1>
+    <form class="my-4">
+      <label>Enter Your car Name: </label>
+      <input
+        type="text"
+        id="carInput"
+        placeholder="Enter You car"
+        class="border-2 p-1"
+      />
+      <button id="addbtn" class="px-7 py-1 bg-green-500 rounded">Add</button>
+    </form>
+    <p class="text-2xl font-bold my-2">Cars Added:</p>
+    <span id="addedvalue"></span>
+
+    <div class="mt-6">
+      <button class="px-4 py-1 bg-red-500 rounded" id="removeCar">
+        Remove cars from local storage
+      </button>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
